@@ -1,0 +1,96 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  position: relative;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.centered {
+  display: inline-block;
+  margin: 0;
+}
+.chess-board {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.chess-board th {
+  padding: 0.5em;
+}
+.chess-board td {
+  border: 1px solid;
+  width: 5em;
+  height: 5em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.chess-board .white {
+  background: #f0d9b5;
+}
+.chess-board .black {
+  background: #b58863;
+}
+
+.chess-board .selectW {
+  background: #b1db79;
+}
+
+.chess-board .selectB {
+  background: #739546;
+}
+
+
+.Wfigure{
+    filter: invert(1);
+    max-height: 95%; 
+}
+
+.Bfigure{
+    max-height: 95%; 
+    width: auto;
+}
+
+#Buttons {
+    display: inline-block;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    margin-left: 10px;
+}
+
+#ButtonNext {
+  visibility: hidden;
+}
+
+#ButtonBack {
+  visibility: hidden;
+}
+#blockscreen, #modalwindow {
+  position: fixed;
+}
+
+
+#blockscreen {
+  background: rgba(0, 0, 0, .5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+#modalwindow {
+  z-index: 11;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #a1a1a1;
+  box-shadow: 0 0 10px #444;
+  
+}
+
+#myindicator {
+  color: #739546;
+}

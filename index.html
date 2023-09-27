@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Chess Board HTML5</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <script defer src="jquery-3.6.4.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Chess by SSStas & Ilya</h1>
+    <div class="box">
+      <div class="centered">
+        <table class="chess-board">
+          <tbody>
+            <tr>
+              <th></th>
+              <th>a</th>
+              <th>b</th>
+              <th>c</th>
+              <th>d</th>
+              <th>e</th>
+              <th>f</th>
+              <th>g</th>
+              <th>h</th>
+            </tr>
+            <tr>
+              <th>8</th>
+              <td class="white" id="a8"><img></td>
+              <td class="black" id="b8"><img></td>
+              <td class="white" id="c8"><img></td>
+              <td class="black" id="d8"><img></td>
+              <td class="white" id="e8"><img></td>
+              <td class="black" id="f8"><img></td>
+              <td class="white" id="g8"><img></td>
+              <td class="black" id="h8"><img></td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td class="black" id="a7"><img></td>
+              <td class="white" id="b7"><img></td>
+              <td class="black" id="c7"><img></td>
+              <td class="white" id="d7"><img></td>
+              <td class="black" id="e7"><img></td>
+              <td class="white" id="f7"><img></td>
+              <td class="black" id="g7"><img></td>
+              <td class="white" id="h7"><img></td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td class="white" id="a6"><img></td>
+              <td class="black" id="b6"><img></td>
+              <td class="white" id="c6"><img></td>
+              <td class="black" id="d6"><img></td>
+              <td class="white" id="e6"><img></td>
+              <td class="black" id="f6"><img></td>
+              <td class="white" id="g6"><img></td>
+              <td class="black" id="h6"><img></td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td class="black" id="a5"><img></td>
+              <td class="white" id="b5"><img></td>
+              <td class="black" id="c5"><img></td>
+              <td class="white" id="d5"><img></td>
+              <td class="black" id="e5"><img></td>
+              <td class="white" id="f5"><img></td>
+              <td class="black" id="g5"><img></td>
+              <td class="white" id="h5"><img></td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td class="white" id="a4"><img></td>
+              <td class="black" id="b4"><img></td>
+              <td class="white" id="c4"><img></td>
+              <td class="black" id="d4"><img></td>
+              <td class="white" id="e4"><img></td>
+              <td class="black" id="f4"><img></td>
+              <td class="white" id="g4"><img></td>
+              <td class="black" id="h4"><img></td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td class="black" id="a3"><img></td>
+              <td class="white" id="b3"><img></td>
+              <td class="black" id="c3"><img></td>
+              <td class="white" id="d3"><img></td>
+              <td class="black" id="e3"><img></td>
+              <td class="white" id="f3"><img></td>
+              <td class="black" id="g3"><img></td>
+              <td class="white" id="h3"><img></td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td class="white" id="a2"><img></td>
+              <td class="black" id="b2"><img></td>
+              <td class="white" id="c2"><img></td>
+              <td class="black" id="d2"><img></td>
+              <td class="white" id="e2"><img></td>
+              <td class="black" id="f2"><img></td>
+              <td class="white" id="g2"><img></td>
+              <td class="black" id="h2"><img></td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td class="black" id="a1"><img></td>
+              <td class="white" id="b1"><img></td>
+              <td class="black" id="c1"><img></td>
+              <td class="white" id="d1"><img></td>
+              <td class="black" id="e1"><img></td>
+              <td class="white" id="f1"><img></td>
+              <td class="black" id="g1"><img></td>
+              <td class="white" id="h1"><img></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id = "Buttons">
+        <button id="StartButton">Начать игру</button>
+        <button id="ButtonNext">Вперед</button>
+        <button id="ButtonBack">Назад</button>
+        <p id = "indicator">Цвет = статус</p>
+      </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
